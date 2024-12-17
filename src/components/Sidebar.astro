@@ -34,23 +34,68 @@
   .episodes a:hover {
     text-decoration: underline;
   }
+  /* General Styling for Sidebar */
+#mobile-sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+#mobile-sidebar button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#mobile-sidebar button:hover {
+  background-color: #2980b9;
+}
+
+#sidebar-content {
+  padding: 15px;
+}
+
+#sidebar-content.hidden {
+  display: none;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  #mobile-sidebar {
+    flex-direction: row;
+  }
+  #sidebar-content {
+    display: block;
+  }
+  #mobile-sidebar button {
+    display: none;
+  }
+}
+
   </style>
-  
+  <header id="mobile-sidebar">
+    <button id="toggle-sidebar">☰ Podcast Info</button>
   <aside>
     <div class="logo">
-      <img src="/astro.svg" alt="Podcast Logo" width="200" />
+      <img src="/techherforward/logo.jpg" alt="Podcast Logo" width="200" />
     </div>
     <div class="details">
-      <h2>Podcast Name</h2>
-      <p><strong>Host:</strong> Your Name</p>
-      <p><strong>Creators:</strong> Team Name</p>
-      <p><strong>Project:</strong> TechHerForward</p>
+      <h2>Tech Her Forward</h2>
+      <p><strong>Host:</strong> Jessica</p>
+      <p><strong>Creators:</strong> Nayanika, Varsha, Peng, Shantam</p>
+      <p><strong>Project:</strong> Tech Her Forward</p>
+      Thank you Adrian.
     </div>
+    <h3>Episodes</h3>
     <ul class="episodes">
-        <li><a href="/techherforward/ep1">Episode 1</a></li>
-        <li><a href="/techherforward/ep2">Episode 2</a></li>
-        <li><a href="/techherforward/ep3">Episode 3</a></li>
-        <li><a href="/techherforward/ep4">Episode 4</a></li>
+        <li><a href="/techherforward/ep1">Platform</a></li>
+        <li><a href="/techherforward/ep2">History</a></li>
+        <li><a href="/techherforward/ep3">Leadership</a></li>
+        <li><a href="/techherforward/ep4">Returnship</a></li>
       </ul>
   </aside>
-  
+</header>
