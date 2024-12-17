@@ -1,0 +1,93 @@
+/* src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: #2c3e50;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  audio {
+    margin-top: 1rem;
+  }
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    margin-top: 1.5rem;
+  }
+  aside {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .episodes a:hover {
+    background-color: #e8f4fc;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+  }
+  audio {
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  @media (max-width: 768px) {
+    aside {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  }
+  .custom-audio-player {
+    width: 100%; /* Make the player take up the full width */
+    height: 48px; /* Adjust the height for a modern look */
+    background: linear-gradient(135deg, #3498db, #9b59b6); /* Stylish gradient background */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .custom-audio-player::-webkit-media-controls-panel {
+    background-color: transparent; /* Make the background match the player */
+  }
+  
+  .custom-audio-player::-webkit-media-controls-play-button,
+  .custom-audio-player::-webkit-media-controls-pause-button {
+    background-color: #ffffff; /* White play/pause button */
+    border-radius: 50%; /* Rounded play/pause button */
+    border: 2px solid #3498db; /* Match the border to the gradient */
+    padding: 5px; /* Add spacing inside the button */
+  }
+  
+  .custom-audio-player::-webkit-media-controls-current-time-display,
+  .custom-audio-player::-webkit-media-controls-time-remaining-display {
+    color: #ffffff; /* Match text color to the background */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  

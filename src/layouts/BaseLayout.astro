@@ -1,0 +1,22 @@
+---
+// BaseLayout.astro
+import Sidebar from '../components/Sidebar.astro';
+---
+<style>
+  .container {
+    display: flex;
+  }
+  main {
+    flex: 1;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #444;
+  }
+</style>
+
+<div class="container">
+  <Sidebar />
+  <main>
+    <slot />
+  </main>
+</div>

@@ -1,0 +1,56 @@
+---
+// Sidebar.astro
+---
+<style>
+    aside {
+      width: 300px;
+      background: #f8f9fa;
+      padding: 1rem;
+      border-right: 1px solid #ddd;
+      min-height: 100vh;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .details {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .episodes {
+    list-style: none;
+    padding: 0;
+  }
+  .episodes li {
+    margin: 0.5rem 0;
+  }
+  .episodes a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  .episodes a:hover {
+    text-decoration: underline;
+  }
+  </style>
+  
+  <aside>
+    <div class="logo">
+      <img src="/astro.svg" alt="Podcast Logo" width="200" />
+    </div>
+    <div class="details">
+      <h2>Podcast Name</h2>
+      <p><strong>Host:</strong> Your Name</p>
+      <p><strong>Creators:</strong> Team Name</p>
+      <p><strong>Project:</strong> TechHerForward</p>
+    </div>
+    <ul class="episodes">
+        <li><a href="/ep1">Episode 1</a></li>
+        <li><a href="/ep2">Episode 2</a></li>
+        <li><a href="/ep3">Episode 3</a></li>
+        <li><a href="/ep4">Episode 4</a></li>
+      </ul>
+  </aside>
+  
